@@ -16,14 +16,15 @@ class JupViewer extends React.Component {
     fpath: '',
     fbase_path: '',
     // Editor Theme
-    ed_theme: 'darkTheme',
-    text_ed_theme: 'monokai',
+    ed_theme: 'lightTheme',
+    text_ed_theme: 'kuroir',
     //themes:
-    background_theme: 'black',
-    background_text_theme: 'white',
+    //themes:
+    background_theme: 'white',
+    background_text_theme: 'black',
     // background_input_theme: '#2F3129',
-    background_input_theme: '#272822',
-    background_output_theme: '#2F3129',
+    background_input_theme: '#F7F7F7',
+    background_output_theme: '#fff',
     loading: true,
     notebook_json: null,
     placeholder_component: 'Loading....',
@@ -284,14 +285,14 @@ class JupViewer extends React.Component {
     if (ev) {
       this.setState({
         // Editor Theme
-        ed_theme: 'darkTheme',
-        text_ed_theme: 'monokai',
+        ed_theme: 'lightTheme',
+        text_ed_theme: 'kuroir',
         //themes:
-        background_theme: 'black',
-        background_text_theme: 'white',
+        background_theme: 'white',
+        background_text_theme: 'black',
         // background_input_theme: '#2F3129',
-        background_input_theme: '#272822',
-        background_output_theme: '#2F3129',
+        background_input_theme: '#F7F7F7',
+        background_output_theme: '#F1F1F2',
       })
     } else {
       this.setState({
@@ -302,7 +303,7 @@ class JupViewer extends React.Component {
         background_theme: 'white',
         background_text_theme: 'black',
         // background_input_theme: '#2F3129',
-        background_input_theme: '#E8E9E8',
+        background_input_theme: '#F7F7F7',
         background_output_theme: '#F1F1F2',
       })
     }
@@ -337,7 +338,7 @@ class JupViewer extends React.Component {
                 }}
                 style={{
                   width: '100%',
-                  maxWidth: '800px',
+                  maxWidth: '1400px',
                   border: 'none',
                 }}
               >
@@ -401,13 +402,13 @@ class JupViewer extends React.Component {
                             'display_name'
                           ]}
                     </Tag>
-                    <Switch
+                    {/* <Switch
                       style={{
                         margin: '0px 5px',
                       }}
                       defaultChecked
-                      checkedChildren="dark theme"
-                      unCheckedChildren="light theme"
+                      checkedChildren="light theme"
+                      unCheckedChildren="dark theme"
                       onChange={this.themeChanger.bind(this)}
                     />
                     <Switch
@@ -417,7 +418,7 @@ class JupViewer extends React.Component {
                       checkedChildren="gutter visilbe"
                       unCheckedChildren="gutter hidden"
                       onChange={this.gutterChanger.bind(this)}
-                    />
+                    /> */}
                   </Col>
                   <Col span={1}></Col>
                 </Row>
@@ -434,7 +435,7 @@ class JupViewer extends React.Component {
                   }}
                   style={{
                     width: '100%',
-                    maxWidth: '800px',
+                    maxWidth: '1400px',
                     border: 'none',
                   }}
                 >
