@@ -1,0 +1,105 @@
+h1 {
+  font-size: 36px;
+}
+.insightsContainer {
+  padding-top: 200px;
+  .sectionContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    .vizContainer {
+      width: 60%;
+      position: relative;
+      margin-bottom: 20px;
+      div::after {
+        content: ' ';
+        height: 40px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        position: absolute;
+        top: 573px;
+      }
+    }
+    .indigenous {
+      div::after {
+        height: 40px;
+      }
+    }
+    .descContainer {
+      width: 40%;
+      padding-left: 100px;
+      h3 {
+        margin-top: 0;
+      }
+      ul li {
+        margin: 10px 0;
+      }
+    }
+  }
+  .factorContainer {
+    margin-bottom: 100px;
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      padding: 0;
+      li {
+        font-weight: 400;
+        font-size: 18px;
+        margin: 10px;
+        padding: 5px 20px;
+        background-color: #5779a3;
+        border-radius: 4px;
+        color: white;
+      }
+      li:nth-child(2) {
+        background-color: #d1605e;
+      }
+      li:nth-child(3) {
+        background-color: #679f9c;
+      }
+      li:nth-child(4) {
+        background-color: #ceb459;
+      }
+      li:nth-child(5) {
+        background-color: #a87d9f;
+      }
+    }
+  }
+}
+table.greyGridTable {
+  border: 2px solid #ffffff;
+  width: 60%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.greyGridTable td,
+table.greyGridTable th {
+  border: 1px solid #ffffff;
+  padding: 3px 4px;
+}
+table.greyGridTable tbody td {
+  font-size: 13px;
+}
+table.greyGridTable tr:nth-child(even) {
+  background: #f1f1f1;
+}
+table.greyGridTable thead {
+  background: #ffffff;
+  border-bottom: 2px solid #333333;
+}
+table.greyGridTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  border-left: 0px solid #333333;
+}
+table.greyGridTable thead th:first-child {
+  border-left: none;
+}
+
+table.greyGridTable tfoot td {
+  font-size: 14px;
+}
