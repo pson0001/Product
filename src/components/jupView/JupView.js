@@ -23,7 +23,7 @@ class JupViewer extends React.Component {
     background_theme: 'white',
     background_text_theme: 'black',
     // background_input_theme: '#2F3129',
-    background_input_theme: '#F7F7F7',
+    background_input_theme: '#E8E9E8',
     background_output_theme: '#fff',
     loading: true,
     notebook_json: null,
@@ -183,7 +183,7 @@ class JupViewer extends React.Component {
             theme={this.state.text_ed_theme}
             name="stdout"
             style={{
-              maxWidth: '700px',
+              maxWidth: '1300px',
               padding: '10px',
               margin: '10px 0px',
             }}
@@ -213,7 +213,7 @@ class JupViewer extends React.Component {
             theme={this.state.text_ed_theme}
             name="text"
             style={{
-              maxWidth: '700px',
+              maxWidth: '1300px',
               padding: '10px',
               margin: '10px 0px',
             }}
@@ -255,7 +255,7 @@ class JupViewer extends React.Component {
             theme={this.state.text_ed_theme}
             name="error"
             style={{
-              maxWidth: '700px',
+              maxWidth: '1300px',
               padding: '10px',
               margin: '10px 0px',
             }}
@@ -291,7 +291,7 @@ class JupViewer extends React.Component {
         background_theme: 'white',
         background_text_theme: 'black',
         // background_input_theme: '#2F3129',
-        background_input_theme: '#F7F7F7',
+        background_input_theme: '#E8E9E8',
         background_output_theme: '#F1F1F2',
       })
     } else {
@@ -303,7 +303,7 @@ class JupViewer extends React.Component {
         background_theme: 'white',
         background_text_theme: 'black',
         // background_input_theme: '#2F3129',
-        background_input_theme: '#F7F7F7',
+        background_input_theme: '#E8E9E8',
         background_output_theme: '#F1F1F2',
       })
     }
@@ -486,7 +486,7 @@ class JupViewer extends React.Component {
                             theme={this.state.text_ed_theme}
                             name="code"
                             style={{
-                              maxWidth: '700px',
+                              maxWidth: '1300px',
                               padding: '10px',
                               margin: '10px 0px',
                             }}

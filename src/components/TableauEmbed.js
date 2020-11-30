@@ -198,6 +198,10 @@ const TableauEmbed = () => {
               Weekly inconsistency, monthly sampling shows stronger seasonality
             </li>
             <li>Positive national trend</li>
+            <li>
+              The seasonal period is 12 months, however, there is a shift by an
+              entire month at the starting from 2016
+            </li>
           </ul>
         </div>
       </div>
