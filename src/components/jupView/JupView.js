@@ -6,6 +6,7 @@ import 'ace-builds/src-noconflict/mode-python'
 import 'ace-builds/src-noconflict/theme-monokai'
 import 'ace-builds/src-noconflict/theme-kuroir'
 import 'ace-builds/src-noconflict/theme-terminal'
+import './jupview.scss'
 
 const ReactMarkdown = require('react-markdown')
 const { Meta } = Card
@@ -23,7 +24,7 @@ class JupViewer extends React.Component {
     background_theme: 'white',
     background_text_theme: 'black',
     // background_input_theme: '#2F3129',
-    background_input_theme: '#E8E9E8',
+    background_input_theme: '#F7F7F7',
     background_output_theme: '#fff',
     loading: true,
     notebook_json: null,
@@ -174,7 +175,7 @@ class JupViewer extends React.Component {
             display: stdout_found ? '' : 'none',
           }}
         >
-          <Tag color="#2db7f5">stdout</Tag>
+          {/* <Tag color="#2db7f5">stdout</Tag> */}
           <br></br>
           <AceEditor
             readOnly
@@ -204,7 +205,7 @@ class JupViewer extends React.Component {
           />
         </div>
         <div style={{ padding: '5px 3px', display: text_found ? '' : 'none' }}>
-          <Tag color="#87d068">data:text/plain</Tag>
+          {/* <Tag color="#87d068">data:text/plain</Tag> */}
           <br></br>
           <AceEditor
             readOnly
@@ -234,19 +235,19 @@ class JupViewer extends React.Component {
           />
         </div>
         <div style={{ display: img_found ? '' : 'none' }}>
-          <Tag color="#87d068">data:image/png</Tag>
+          {/* <Tag color="#87d068">data:image/png</Tag> */}
           <br></br>
           <img
             src={img_data}
             style={{
               display: img_found ? '' : 'none',
-              width: '100%',
+              width: '50%',
               backgroundColor: 'white',
             }}
           />
         </div>
         <div style={{ padding: '5px 3px', display: error_found ? '' : 'none' }}>
-          <Tag color="#f50">error</Tag>
+          {/* <Tag color="#f50">error</Tag> */}
           <br></br>
           <AceEditor
             readOnly
@@ -291,8 +292,8 @@ class JupViewer extends React.Component {
         background_theme: 'white',
         background_text_theme: 'black',
         // background_input_theme: '#2F3129',
-        background_input_theme: '#E8E9E8',
-        background_output_theme: '#F1F1F2',
+        background_input_theme: '#F7F7F7',
+        background_output_theme: '#F7F7F7',
       })
     } else {
       this.setState({
@@ -303,8 +304,8 @@ class JupViewer extends React.Component {
         background_theme: 'white',
         background_text_theme: 'black',
         // background_input_theme: '#2F3129',
-        background_input_theme: '#E8E9E8',
-        background_output_theme: '#F1F1F2',
+        background_input_theme: '#F7F7F7',
+        background_output_theme: '#F7F7F7',
       })
     }
     console.log(`switch to ${ev}`)
@@ -323,7 +324,7 @@ class JupViewer extends React.Component {
   }
 
   render() {
-    console.log(this.props.file)
+    //   console.log(this.props.file)
     return (
       <div>
         <br></br>
@@ -457,6 +458,7 @@ class JupViewer extends React.Component {
                             padding: '5px',
                             color: '#56ACBC',
                             display: item['cell_type'] == 'code' ? '' : 'none',
+                            backgroundColor: 'transparent',
                           }}
                         >
                           I [ {item['execution_count']} ]:
@@ -489,6 +491,7 @@ class JupViewer extends React.Component {
                               maxWidth: '1300px',
                               padding: '10px',
                               margin: '10px 0px',
+                              backgroundColor: 'transparent',
                             }}
                             width="100%"
                             maxLines={
@@ -518,6 +521,7 @@ class JupViewer extends React.Component {
                             style={{
                               margin: '0px 0px',
                               padding: '10px',
+                              width: '100%',
                               // border:'solid',
                               // borderWidth:'1px'
                             }}
@@ -554,6 +558,7 @@ class JupViewer extends React.Component {
                             float: 'left',
                             padding: '5px',
                             color: '#E5496A',
+                            backgroundColor: 'transparent',
                           }}
                         >
                           O [ {item['execution_count']} ]:
@@ -564,6 +569,7 @@ class JupViewer extends React.Component {
                         style={{
                           textAlign: 'left',
                           color: 'white',
+                          backgroundColor: 'transparent',
                         }}
                       >
                         {this.praseOutputs(item['outputs'])}
