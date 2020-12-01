@@ -15,7 +15,6 @@ import Graph3 from './../assets/graph3.png'
 
 import Img8 from './../assets/image 8.png'
 
-
 const Modelling = () => {
   return (
     <div>
@@ -85,8 +84,8 @@ const Modelling = () => {
           <div className="descContainer">
             <h3>Autocorrelations</h3>
             <ul>
-              <li>ACF with ~sine wave diminishing</li>
-              <li>Strong cut off after lag one</li>
+              <li>PACF sharp cut off and lag one is positive add AR term</li>
+              <li>ACF sharp cut off consider MA term as well</li>
             </ul>
           </div>
         </div>
