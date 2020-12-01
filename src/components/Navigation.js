@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './navigation.scss'
 const Navigation = (props) => {
-  const [ifInsights, setIfInsights] = useState(true)
+  const [ifInsights, setIfInsights] = useState('insights')
 
   props.getIfInsights(ifInsights)
   return (
@@ -12,16 +12,22 @@ const Navigation = (props) => {
       <div className="navItems">
         <ul>
           <li
-            onClick={() => setIfInsights(true)}
-            className={ifInsights ? 'selected' : ''}
+            onClick={() => setIfInsights('insights')}
+            className={ifInsights === 'insights' ? 'selected' : ''}
           >
             Insights
           </li>
           <li
-            onClick={() => setIfInsights(false)}
-            className={ifInsights ? '' : 'selected'}
+            onClick={() => setIfInsights('modelling')}
+            className={ifInsights === 'modelling' ? 'selected' : ''}
           >
             Modelling
+          </li>
+          <li
+            onClick={() => setIfInsights('notebook')}
+            className={ifInsights === 'notebook' ? 'selected' : ''}
+          >
+            Notebook
           </li>
         </ul>
       </div>

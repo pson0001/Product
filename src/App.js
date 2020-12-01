@@ -4,9 +4,10 @@ import React, { useState } from 'react'
 import Navigation from './components/Navigation'
 import TableauEmbed from './components/TableauEmbed'
 import Modelling from './components/Modelling'
+import Notebook from './components/Notebook'
 
 function App() {
-  const [showInsights, setShowInsights] = useState(true)
+  const [showInsights, setShowInsights] = useState('insights')
   const getIfInsights = (e) => {
     setShowInsights(e)
   }
@@ -14,7 +15,9 @@ function App() {
     <div>
       <Navigation getIfInsights={getIfInsights}></Navigation>
       <div className="container">
-        {showInsights ? <TableauEmbed></TableauEmbed> : <Modelling></Modelling>}
+        {showInsights === 'insights' ? <TableauEmbed></TableauEmbed> : null}
+        {showInsights === 'modelling' ? <Modelling></Modelling> : null}
+        {showInsights === 'notebook' ? <Notebook></Notebook> : null}
       </div>
     </div>
   )

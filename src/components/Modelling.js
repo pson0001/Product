@@ -15,7 +15,6 @@ import Graph3 from './../assets/graph3.png'
 
 import Img8 from './../assets/image 8.png'
 
-import JupViewer from './jupView/JupView'
 
 const Modelling = () => {
   return (
