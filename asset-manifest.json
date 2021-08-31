@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/product/static/css/main.14fdd4c5.chunk.css",
+    "main.js": "/product/static/js/main.80fdb185.chunk.js",
+    "main.js.map": "/product/static/js/main.80fdb185.chunk.js.map",
+    "runtime-main.js": "/product/static/js/runtime-main.9394d0ef.js",
+    "runtime-main.js.map": "/product/static/js/runtime-main.9394d0ef.js.map",
+    "static/js/2.3ed5ca37.chunk.js": "/product/static/js/2.3ed5ca37.chunk.js",
+    "static/js/2.3ed5ca37.chunk.js.map": "/product/static/js/2.3ed5ca37.chunk.js.map",
+    "static/js/3.4d43a332.chunk.js": "/product/static/js/3.4d43a332.chunk.js",
+    "static/js/3.4d43a332.chunk.js.map": "/product/static/js/3.4d43a332.chunk.js.map",
+    "index.html": "/product/index.html",
+    "static/css/main.14fdd4c5.chunk.css.map": "/product/static/css/main.14fdd4c5.chunk.css.map",
+    "static/js/2.3ed5ca37.chunk.js.LICENSE.txt": "/product/static/js/2.3ed5ca37.chunk.js.LICENSE.txt",
+    "static/media/graph1.0d6c8736.png": "/product/static/media/graph1.0d6c8736.png",
+    "static/media/graph2.8cb12964.png": "/product/static/media/graph2.8cb12964.png",
+    "static/media/graph3.494c0738.png": "/product/static/media/graph3.494c0738.png",
+    "static/media/image 1.9ab2e88f.png": "/product/static/media/image 1.9ab2e88f.png",
+    "static/media/image 2.39be935f.png": "/product/static/media/image 2.39be935f.png",
+    "static/media/image 3.36b85bd9.png": "/product/static/media/image 3.36b85bd9.png",
+    "static/media/image 4.ceebeaf2.png": "/product/static/media/image 4.ceebeaf2.png",
+    "static/media/image 5.f9d7743c.png": "/product/static/media/image 5.f9d7743c.png",
+    "static/media/image 6.0aa1eb2e.png": "/product/static/media/image 6.0aa1eb2e.png",
+    "static/media/image 7.93e0e402.png": "/product/static/media/image 7.93e0e402.png",
+    "static/media/image 8.37cbd7f1.png": "/product/static/media/image 8.37cbd7f1.png",
+    "static/media/loss.772ceedd.png": "/product/static/media/loss.772ceedd.png",
+    "static/media/model.00c43745.png": "/product/static/media/model.00c43745.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9394d0ef.js",
+    "static/js/2.3ed5ca37.chunk.js",
+    "static/css/main.14fdd4c5.chunk.css",
+    "static/js/main.80fdb185.chunk.js"
+  ]
+}
