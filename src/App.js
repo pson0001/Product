@@ -16,7 +16,6 @@ function App() {
       <Navigation getIfInsights={getIfInsights}></Navigation>
       <div className="container">
         {showInsights === 'insights' ? <TableauEmbed></TableauEmbed> : null}
-        {showInsights === 'modelling' ? <Modelling></Modelling> : null}
         {showInsights === 'notebook' ? <Notebook></Notebook> : null}
       </div>
     </div>
