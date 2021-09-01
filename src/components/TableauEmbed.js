@@ -1,6 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import './tableauEmbed.scss'
 import LossImg from './../assets/loss.png'
+import Loss1Img from './../assets/loss1.png'
+import Loss1FirstImg from './../assets/loss1first.png'
+
 import ModelImg from './../assets/model.png'
 const { tableau } = window
 
@@ -38,27 +41,6 @@ const TableauEmbed = () => {
   const initVizGeo = () => {
     new tableau.Viz(refGeo.current, urlGeo, options)
   }
-
-  // const refFLuYear = useRef(null)
-
-  // const urlFLuYear =
-  //   'https://public.tableau.com/views/influenza_16064333146460/Sheet11?:language=en'
-  // const initVizFLuYear = () => {
-  //   new tableau.Viz(refFLuYear.current, urlFLuYear, options)
-  // }
-  // const refSexYear = useRef(null)
-
-  // const urlSexYear = 'https://public.tableau.com/shared/MN9T3NFZR'
-  // const initVizSexYear = () => {
-  //   new tableau.Viz(refSexYear.current, urlSexYear, options)
-  // }
-
-  // const refIndigenous = useRef(null)
-
-  // const urlIndigenous = 'https://public.tableau.com/shared/XWQP79M8T'
-  // const initVizIndigenous = () => {
-  //   new tableau.Viz(refIndigenous.current, urlIndigenous, options)
-  // }
 
   useEffect(() => {
     initViz()
@@ -147,7 +129,6 @@ const TableauEmbed = () => {
           </ul>
         </div>
       </div>
-
       <h1>On/Off Promotion</h1>
       <div className="sectionContainer">
         <div className="vizContainer">
@@ -420,10 +401,27 @@ const TableauEmbed = () => {
         </div>
       </div>
       <h1>Evaluations - Training</h1>
-      <div className="sectionContainer">
-        <div className="vizContainer">
+      <div className="sectionContainer imageandpots">
+        <div>
+          <div className="images">
+            <div>
+              <h3>Training with 16 different datasets</h3>
+              <img src={Loss1Img} alt="Loss1" />
+            </div>
+            <div>
+              <h3>Training with single dataset(first day)</h3>
+              <img src={Loss1FirstImg} alt="Loss1first" />
+            </div>
+          </div>
+        </div>
+        <div>
           <ul>
-            <li>bla</li>
+            <li>Training in 16 rounds for 16 targets.</li>
+            <li>Extracting feature specific for the target label </li>
+            <li>16 epochs for large batches of 512 w/ mse minimum</li>
+            <li>Input Array (X) of 30 & 10 Embedding Layers</li>
+            <li>notebook runtime 10:30 AM - 1:20 PM</li>
+            <li> {'Validation NWRMSLE -> 0.59'}</li>
           </ul>
         </div>
       </div>

@@ -3,6 +3,7 @@ h1 {
 }
 .insightsContainer {
   padding-top: 200px;
+
   .sectionContainer {
     display: flex;
     flex-direction: row;
@@ -32,11 +33,20 @@ h1 {
         margin-left: 20px;
       }
     }
-    .indigenous {
-      div::after {
-        height: 40px;
+    .images {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      div {
+        width: 100%;
+        padding-right: 20px;
+        img {
+          width: auto;
+          height: 40vh;
+        }
       }
     }
+
     .descContainer {
       width: 40%;
       padding-left: 100px;
@@ -48,35 +58,9 @@ h1 {
       }
     }
   }
-  .factorContainer {
-    margin-bottom: 100px;
-    ul {
-      display: flex;
-      flex-direction: row;
-      list-style-type: none;
-      padding: 0;
-      li {
-        font-weight: 400;
-        font-size: 18px;
-        margin: 10px;
-        padding: 5px 20px;
-        background-color: #5779a3;
-        border-radius: 4px;
-        color: white;
-      }
-      li:nth-child(2) {
-        background-color: #d1605e;
-      }
-      li:nth-child(3) {
-        background-color: #679f9c;
-      }
-      li:nth-child(4) {
-        background-color: #ceb459;
-      }
-      li:nth-child(5) {
-        background-color: #a87d9f;
-      }
-    }
+  .imageandpots {
+    display: flex;
+    flex-direction: column;
   }
 }
 table.greyGridTable {
